@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <form id="search">
+        <i class="fa-solid fa-location-dot"></i>
+        <input
+          type="search"
+          name="city-name"
+          id="city-name"
+          placeholder="Buscar cidade."
+        />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <div id="weather">
+        <h1 id="title">Ituiutaba, MG</h1>
+
+        <div id="infos">
+          <div id="temp">
+            <img id="temp-img" src="" alt="" />
+
+            <div>
+              <p id="temp-value">30 <sup>°C</sup></p>
+              <p id="temp-desc">Ensolarado</p>
+            </div>
+          </div>
+
+          <div id="other-infos">
+            <div class="info">
+              <i id="temp-max-icon" class="fa-solid fa-temperature-high"></i>
+
+              <div>
+                <h2>Temp. Maxima</h2>
+                <p id="temp-max">35 <sup>°C</sup></p>
+              </div>
+            </div>
+            <div class="info">
+              <i id="temp-min-icon" class="fa-solid fa-temperature-low"></i>
+
+              <div>
+                <h2>Temp. Minima</h2>
+                <p id="temp-min">27 <sup>°C</sup></p>
+              </div>
+            </div>
+            <div class="info">
+              <i id="humidity-icon" class="fa-solid fa-droplet"></i>
+
+              <div>
+                <h2>Umidade</h2>
+                <p id="humidity">50%</p>
+              </div>
+            </div>
+            <div class="info">
+              <i id="wind-icon" class="fa-solid fa-wind"></i>
+
+              <div>
+                <h2>Vento</h2>
+                <p id="wind">50 km/h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="alert"></div>
+    </div>
+  </body>
+</html>
