@@ -48,6 +48,18 @@ body {
   cursor: pointer;
 }
 
+#alert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#alert img {
+  width: 200px;
+  margin-top: 20px;
+  transform: translateX(25px);
+}
+
 #weather {
   display: none;
   margin-top: 20px;
